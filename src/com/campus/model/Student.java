@@ -60,10 +60,23 @@ public class Student {
    public void setMarks(int[] marks){
     this.marks = marks;
    }
+//instance methods
+    public void displayStudentInfo(){
+    System.out.println("Student ID: " + studentid);
+        System.out.println("Student Name: " + studentname);
+        System.out.println("Age: " + age);
+        System.out.println("Department: " + department);
+    }
 
    public void displayStudentInfo(boolean showMarks){
     if(showMarks) {
         System.out.println("Marks:" +java.util.Arrays.toString(marks));
     }
+   }
+   public static void displayStudentCount(){
+    System.out.println("Total number of students: " + studentCount);
+   }
+   public static int getStudentCount(){
+    return studentCount;
    }
 }

@@ -3,7 +3,6 @@ package com.campus.service;
 import com.campus.model.Student;
 
 public class StudentService{
-
 //calculate total marks
 public int calculateTotal(Student student){
     int[] marks = student.getMarks();
@@ -52,7 +51,7 @@ public int findMin(Student student) {
     }
     int min = marks[0];
      for (int mark : marks){
-        if(mark > min){
+        if(mark < min){
             min = mark;
         }
      }
@@ -105,10 +104,10 @@ public void displayReportCard(Student student){
     System.out.println("Student ID:" + student.getStudentid());
     System.out.println("Department:" + student.getDepartment());
     System.out.println("Total Marks:" + calculateTotal(student));
-    System.out.prstudentintln("Average Marks:" + calculateAverage(student));
+    System.out.println("Average Marks:" + calculateAverage(student));
     System.out.println("Maximum Marks:" + findMax(student));
     System.out.println("Minimum Marks:" + findMin(student));
     System.out.println("Grade:" + grade(student));
-    System.out.println("Pass/Fail" + passOrFail(student));
+    System.out.println("Pass/Fail:" + passOrFail(student));
 }
 }

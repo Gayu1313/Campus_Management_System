@@ -64,7 +64,6 @@ public char grade(Student student){
     if ((marks == null || marks.length == 0)){
         return 'F';
     }
-    int total = calculateTotal(student);
     int average = (int) calculateAverage(student);
 
     if(average >= 90) {

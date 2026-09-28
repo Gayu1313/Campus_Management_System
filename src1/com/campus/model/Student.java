@@ -1,6 +1,8 @@
 package com.campus.model;
+
+import com.campus.contract.StudentOperations;
  
-public class Student {
+public abstract class Student implements StudentOperations {
 //Encapsulation data hiding
 //Instance variables
    private int studentid;
@@ -73,10 +75,18 @@ public class Student {
         System.out.println("Marks:" +java.util.Arrays.toString(marks));
     }
    }
+   //abstract method
+    public abstract void studentType();
+
+
+
+    
+    //static method-belongs to class not object
    public static void displayStudentCount(){
     System.out.println("Total number of students: " + studentCount);
    }
-   public static int getStudentCount(){
+  public static int getStudentCount(){
     return studentCount;
+   
    }
 }

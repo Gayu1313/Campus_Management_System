@@ -1,5 +1,8 @@
 /home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/services/StudentService.java
+/home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/dao/StudentDAO.java
 /home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/listener/CampusSession.java
+/home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/model/Student.java
+/home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/util/DBConnection.java
 /home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/controller/StudentServlet.java
 /home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/controller/SessionServlet.java
 /home/student/gayu_repos/Campus_Management_System/src/main/java/com/campus/filter/LoggingFilter.java
